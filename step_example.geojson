@@ -1,103 +1,2570 @@
-{ type: 'FeatureCollection',
-  features: 
-   [ { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     { type: 'Feature', geometry: [Object], properties: [Object] },
-     ... 71 more items ] }
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78178833333333,
+                    32.080105
+                ]
+            },
+            "properties": {
+                "battery_level": 52,
+                "code": "NTJ74",
+                "id": "a3ececed-6819-4913-a767-d4ea0a07fcca"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.781238333333334,
+                    32.078693333333334
+                ]
+            },
+            "properties": {
+                "battery_level": 79,
+                "code": "VI6ML",
+                "id": "321de33e-e936-4671-ae91-0fc6cb446b86"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.779831,
+                    32.080269
+                ]
+            },
+            "properties": {
+                "battery_level": 91,
+                "code": "NFRBB",
+                "id": "df05ccb3-3c31-4ea9-b04d-ff7bdd72bada"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778984,
+                    32.079048
+                ]
+            },
+            "properties": {
+                "battery_level": 93,
+                "code": "TMS77",
+                "id": "6dcad476-0332-4ffe-b04c-0928ccda8fa3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.779689999999995,
+                    32.07777
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "9S9I8",
+                "id": "2cacf5b5-aee9-4c79-87ff-464c223ba186"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77972,
+                    32.07774
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "RM1VJ",
+                "id": "c4cccab6-3156-4cab-85df-81f21104f298"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.777981,
+                    32.07774
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "FXAV4",
+                "id": "2c2e3076-a581-48ea-aae3-69017f83cbb1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.777950000000004,
+                    32.07774333333334
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "7B7LK",
+                "id": "f4f90f0a-261d-4a49-88e0-23d16881aed9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778008,
+                    32.077663
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "9LN7V",
+                "id": "88ea8207-ef48-4172-a369-1fd3067c7ab4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77728333333334,
+                    32.079658333333334
+                ]
+            },
+            "properties": {
+                "battery_level": 95,
+                "code": "4HAJV",
+                "id": "26c918d3-fe31-4f60-b9fe-e3a95688231a"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778629,
+                    32.084015
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "XSIRV",
+                "id": "8afa03e3-b1e6-48b9-8cf4-f116f829880e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778595,
+                    32.08401166666667
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "ZVAAP",
+                "id": "013bcf37-60b5-47bf-8182-a002d61c03b8"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778549,
+                    32.084007
+                ]
+            },
+            "properties": {
+                "battery_level": 94,
+                "code": "EYB3G",
+                "id": "f1297d58-4d20-477a-a97b-46b65822977d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77764166666667,
+                    32.075473333333335
+                ]
+            },
+            "properties": {
+                "battery_level": 88,
+                "code": "ZQKM7",
+                "id": "0ba3b956-2d5c-4c34-916e-26ba1e4bc30c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.774712,
+                    32.0797
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "JT9JJ",
+                "id": "a469c6f8-bf68-48cc-8069-59289d3cc092"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.774631666666664,
+                    32.079658333333334
+                ]
+            },
+            "properties": {
+                "battery_level": 91,
+                "code": "YMGAR",
+                "id": "98d849eb-88ee-4748-8444-70be6e3af183"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.776295,
+                    32.083454
+                ]
+            },
+            "properties": {
+                "battery_level": 94,
+                "code": "RQKSH",
+                "id": "6bb777c9-4b64-4530-b808-801433dd6c7c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.779892,
+                    32.073994
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "RVGSF",
+                "id": "6b5a9150-d522-48d6-a726-286f27f9e409"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.781799,
+                    32.085453
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "QW1IS",
+                "id": "9311e733-e122-4b1c-ae8b-6d9287384102"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77403666666667,
+                    32.07911
+                ]
+            },
+            "properties": {
+                "battery_level": 75,
+                "code": "STZ7I",
+                "id": "8a294423-41ec-47d7-80c3-ab5ae98706d2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.774021,
+                    32.079147
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "LEGT4",
+                "id": "b7e89be2-fb14-44d8-a74e-6a19bd1d2a0d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77401,
+                    32.078819
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "1SY8Q",
+                "id": "ba397f28-347f-4299-99dd-2cb8f6dfea6c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.774006,
+                    32.078796
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "5W2KU",
+                "id": "730b2c8f-0c4b-4715-badd-248110495ad5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773975,
+                    32.07885
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "WEWZV",
+                "id": "ce95cc0d-b0b1-4061-aeb8-7d93d4813309"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773956,
+                    32.078995
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "ACJBV",
+                "id": "8f59c48b-3989-4bf1-abf1-f54e97ef0f84"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773743,
+                    32.080383
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "SYUT6",
+                "id": "d2717458-fca9-43ff-957d-e5368ea7f3c9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77708,
+                    32.084865
+                ]
+            },
+            "properties": {
+                "battery_level": 95,
+                "code": "PS47Q",
+                "id": "714bab02-4bbe-4bd4-bbe9-2ee28e8f6068"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.7771,
+                    32.084904
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "3791K",
+                "id": "f1ed82ff-a537-49c5-8ae1-970cc25278e4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.777077,
+                    32.084908
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "R38BA",
+                "id": "3e454bcb-4ed6-4237-861b-589a1684fd6c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773872,
+                    32.081749
+                ]
+            },
+            "properties": {
+                "battery_level": 67,
+                "code": "JIPMF",
+                "id": "181c03ba-bdd2-4465-a4dd-c77842608001"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773956,
+                    32.082161
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "MGIXJ",
+                "id": "7d772dcd-af84-4041-af7c-56f658d73dad"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773888,
+                    32.082207
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "1EFR3",
+                "id": "5a2d7195-141d-4fa5-9001-b9e0267bd8ce"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78650666666667,
+                    32.08452166666667
+                ]
+            },
+            "properties": {
+                "battery_level": 80,
+                "code": "FXUJ6",
+                "id": "ffce6574-9a13-410e-a416-d1083088f018"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.774792,
+                    32.075481
+                ]
+            },
+            "properties": {
+                "battery_level": 88,
+                "code": "GRVWR",
+                "id": "c5829fbf-4bf3-43d4-b8a9-d7676bfd307d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.784241,
+                    32.073288
+                ]
+            },
+            "properties": {
+                "battery_level": 83,
+                "code": "ZIBEN",
+                "id": "349b14a2-46cc-4f66-ab33-3d839d796fd0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77502833333333,
+                    32.08409166666667
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "TYTJH",
+                "id": "d32e1938-f4e1-4cf8-affc-636fe7d87958"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.775013,
+                    32.084106
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "YJB2U",
+                "id": "6426df0d-5dca-44e6-aa1c-1825533b8862"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.775021,
+                    32.084148
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "CRRUZ",
+                "id": "18cd6132-9c60-477d-b302-93f6e609f96c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78912,
+                    32.081184
+                ]
+            },
+            "properties": {
+                "battery_level": 89,
+                "code": "LP7NG",
+                "id": "37ce14e2-9dd8-45b5-b3f3-cec05b413bc8"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773941666666666,
+                    32.08307666666666
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "26KWS",
+                "id": "6a95b07d-0091-482d-b881-906998925fe3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773963333333334,
+                    32.08313333333333
+                ]
+            },
+            "properties": {
+                "battery_level": 94,
+                "code": "5D3RU",
+                "id": "d7f68cd6-9071-4304-a67e-dd1dad5461ca"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.775589,
+                    32.074051
+                ]
+            },
+            "properties": {
+                "battery_level": 74,
+                "code": "FB8L6",
+                "id": "2b00b458-548f-430b-9f4b-81e6f121a603"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.782692,
+                    32.072338
+                ]
+            },
+            "properties": {
+                "battery_level": 93,
+                "code": "L3CUR",
+                "id": "d1f16f71-7c59-49b7-801f-41ef76dfdede"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778618,
+                    32.072487
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "GQQ4F",
+                "id": "1dcc9f4d-9eae-483a-ba16-25bafd6c30e2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778683,
+                    32.072441
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "MTBFK",
+                "id": "15dc51b3-b0fe-4bd6-bc19-72054177536e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.774406666666664,
+                    32.084311666666665
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "U5D8V",
+                "id": "68676fee-7064-42c3-8c8a-6b1708e4cfc1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.776142,
+                    32.073391
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "VFA4S",
+                "id": "790672a8-7f88-4bea-8b3d-26ff3cc6893e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.779881,
+                    32.072136
+                ]
+            },
+            "properties": {
+                "battery_level": 92,
+                "code": "T87SG",
+                "id": "ddf9d852-8148-4616-9c7a-7737b6e8f922"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778595,
+                    32.072342
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "VXFCI",
+                "id": "1ce9a326-545f-4c79-8447-6f07185db636"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78277190999999,
+                    32.07203066999998
+                ]
+            },
+            "properties": {
+                "battery_level": 52,
+                "code": "KGXI8",
+                "id": "e72ca91b-9b4f-4fec-a0b5-17b2d002d9ef"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78732,
+                    32.085163333333334
+                ]
+            },
+            "properties": {
+                "battery_level": 51,
+                "code": "RR1XZ",
+                "id": "a007287d-f023-4956-af73-09ee061dffde"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773998,
+                    32.08429
+                ]
+            },
+            "properties": {
+                "battery_level": 95,
+                "code": "RBKMJ",
+                "id": "22fe136a-bec8-4e74-ac8f-f5546cf27c88"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.789276666666666,
+                    32.08376
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "178XL",
+                "id": "07c60ae8-9a5c-4b02-a470-4d57e7ed107e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.772266,
+                    32.082623
+                ]
+            },
+            "properties": {
+                "battery_level": 91,
+                "code": "3HUIF",
+                "id": "5c94cd9d-04c9-49cc-9022-e39169e28048"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.79055833333334,
+                    32.07766
+                ]
+            },
+            "properties": {
+                "battery_level": 87,
+                "code": "35QNE",
+                "id": "36f7ea75-5b69-421f-bb83-ad45592bc7bb"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.774723,
+                    32.085785
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "IJSUM",
+                "id": "cf334bdc-e4df-4f51-8668-49c895c3d263"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.774799,
+                    32.08593
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "Q69W8",
+                "id": "cdc37e6f-7e4f-4c32-9187-0cbff9afdc90"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77733633952684,
+                    32.08757212084196
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "54EVU",
+                "id": "65e80bde-0700-42f9-8d4b-f77ad1fbbdf5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.777416,
+                    32.087601
+                ]
+            },
+            "properties": {
+                "battery_level": 95,
+                "code": "YWBFF",
+                "id": "f445f39f-a6aa-4b1a-957c-cfc4b40d0d76"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.777416,
+                    32.087711
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "IGEPS",
+                "id": "c5e3570f-d377-4676-b3bc-6411f9d8a7f0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.783215,
+                    32.088123
+                ]
+            },
+            "properties": {
+                "battery_level": 94,
+                "code": "9NLH8",
+                "id": "71018332-5033-4d5e-9a95-4fed900ca315"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77116,
+                    32.08235166666667
+                ]
+            },
+            "properties": {
+                "battery_level": 91,
+                "code": "LUCRM",
+                "id": "8b1e3113-8e1f-46e5-9c56-96cc75bb44d5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77116,
+                    32.082363
+                ]
+            },
+            "properties": {
+                "battery_level": 89,
+                "code": "F6T4B",
+                "id": "d1997458-05dd-42d9-9527-019ac2f697ce"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77116,
+                    32.082397
+                ]
+            },
+            "properties": {
+                "battery_level": 89,
+                "code": "R2SR5",
+                "id": "9887a7ed-94e7-47a0-8f6e-b4e6f3ec0e75"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778137,
+                    32.070957
+                ]
+            },
+            "properties": {
+                "battery_level": 81,
+                "code": "IQITY",
+                "id": "71b50bee-bcab-401b-8b72-b1fe43d5058a"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778126,
+                    32.070938
+                ]
+            },
+            "properties": {
+                "battery_level": 94,
+                "code": "6ZQ73",
+                "id": "4507c5a3-0ffe-40ac-bae0-4dabbe1e166a"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.787403,
+                    32.072098
+                ]
+            },
+            "properties": {
+                "battery_level": 82,
+                "code": "FZ23Z",
+                "id": "7f4246ae-bbe8-4fd8-a145-99da3185927c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77497166666667,
+                    32.08727666666667
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "D9FKR",
+                "id": "d463900a-a41b-4811-beb6-f054305d24bd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778534,
+                    32.070396
+                ]
+            },
+            "properties": {
+                "battery_level": 89,
+                "code": "4T5Q8",
+                "id": "12e4fa80-a4b0-47be-b6d8-df6a55afcfe3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77202666666667,
+                    32.084983333333334
+                ]
+            },
+            "properties": {
+                "battery_level": 83,
+                "code": "SU8GA",
+                "id": "83ff244f-dfa2-4664-9e9b-bf00a0f32c90"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.788033,
+                    32.087013
+                ]
+            },
+            "properties": {
+                "battery_level": 95,
+                "code": "NEWBY",
+                "id": "a29f2dd2-9a31-420d-8f25-a34d2c9eea27"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.772968,
+                    32.086399
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "X6I4H",
+                "id": "9fd41dc4-2fff-4686-82b7-0c262371080c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.773064,
+                    32.086533
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "TFSL3",
+                "id": "7631088b-9e07-4c93-beec-3f476694cc71"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77293,
+                    32.086422
+                ]
+            },
+            "properties": {
+                "battery_level": 95,
+                "code": "JT524",
+                "id": "f0d96e58-0d9a-4558-acc0-3e784778b2f0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.777496,
+                    32.088848
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "ZBYRK",
+                "id": "7801ac9d-1389-46f6-afb3-441c75ce0876"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.789840000000005,
+                    32.073031666666665
+                ]
+            },
+            "properties": {
+                "battery_level": 86,
+                "code": "ST9WD",
+                "id": "b7cfdc92-2df0-4557-ad37-2d7e850919f2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.769924,
+                    32.076775
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "CWZCT",
+                "id": "9f6d5981-8d18-4095-a1b3-1c58b2f5fd3a"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.784512,
+                    32.070053
+                ]
+            },
+            "properties": {
+                "battery_level": 91,
+                "code": "I6HUB",
+                "id": "3d4a2a9e-1855-431c-b976-5757dc82eb25"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.76978,
+                    32.07677833333333
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "XTRMJ",
+                "id": "64064d64-80b1-40ec-8f5a-12caf0f9f435"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.79274,
+                    32.07716333333334
+                ]
+            },
+            "properties": {
+                "battery_level": 76,
+                "code": "SY33Z",
+                "id": "d4380f7f-f0d1-4845-b5f3-54deeb4976cf"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.770885,
+                    32.074352
+                ]
+            },
+            "properties": {
+                "battery_level": 86,
+                "code": "SWGM4",
+                "id": "9b229fb8-c30c-48d5-84c8-c58c81800e36"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.780045,
+                    32.089783
+                ]
+            },
+            "properties": {
+                "battery_level": 95,
+                "code": "3LILI",
+                "id": "87af2cac-30fe-4312-8dd9-56176cf6f69e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.768841,
+                    32.078983
+                ]
+            },
+            "properties": {
+                "battery_level": 85,
+                "code": "VDAGQ",
+                "id": "a3342faf-e02d-4d49-a673-9c0adf3d11ae"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77906,
+                    32.089989
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "G4P7J",
+                "id": "879fc083-1a7f-415c-969c-d82389a31560"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.779114,
+                    32.09
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "WGWK4",
+                "id": "b626cfdf-abc9-4ea2-9751-6f8117a4e851"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.780117,
+                    32.090332
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "G773A",
+                "id": "b6bce9ec-53ae-4037-aecf-6237a75025e6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.786343,
+                    32.069683
+                ]
+            },
+            "properties": {
+                "battery_level": 81,
+                "code": "AIFQ1",
+                "id": "e0e602a7-7d06-4e40-a9e2-70abc0af474d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78646166666667,
+                    32.089405000000006
+                ]
+            },
+            "properties": {
+                "battery_level": 92,
+                "code": "UTV65",
+                "id": "cf213137-7a6c-4207-8c49-7232d548e06c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.792332,
+                    32.074265
+                ]
+            },
+            "properties": {
+                "battery_level": 69,
+                "code": "2PBDJ",
+                "id": "0c7df567-2d0d-4072-848a-73dab71624ce"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.775684,
+                    32.089485
+                ]
+            },
+            "properties": {
+                "battery_level": 94,
+                "code": "A1YMK",
+                "id": "b24d878d-dee7-42aa-b25f-bc1087876d1f"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.780228,
+                    32.090626
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "JKPAY",
+                "id": "fc2a5bd1-84f3-413e-9f09-d2ebf046c3af"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.76881,
+                    32.083565
+                ]
+            },
+            "properties": {
+                "battery_level": 65,
+                "code": "UUHKH",
+                "id": "d716fe99-05d7-4495-bfae-8cf5a63b65c4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.767929,
+                    32.079308
+                ]
+            },
+            "properties": {
+                "battery_level": 83,
+                "code": "A25XV",
+                "id": "ce1f56a2-266b-4cdd-a068-0ec71d16999a"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.782692,
+                    32.090729
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "XAUXD",
+                "id": "00b6c132-77a9-4e20-ad3e-cf8826880bdd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.779895,
+                    32.090786666666666
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "QPTQV",
+                "id": "172dc78f-4474-4cc3-a7e8-95cf92e70983"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.787254,
+                    32.069378
+                ]
+            },
+            "properties": {
+                "battery_level": 87,
+                "code": "WTLBT",
+                "id": "61a2ea27-cb1b-48ca-a6ad-f898992e8118"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.775776,
+                    32.090137
+                ]
+            },
+            "properties": {
+                "battery_level": 86,
+                "code": "12SZ4",
+                "id": "5e2c6ec3-e77c-411b-b375-9050ffadf1e0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.783287,
+                    32.068165
+                ]
+            },
+            "properties": {
+                "battery_level": 89,
+                "code": "B2Z3V",
+                "id": "d8258b9b-e91a-4c2f-8066-44db75ca9cb0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77568833333333,
+                    32.090165
+                ]
+            },
+            "properties": {
+                "battery_level": 93,
+                "code": "5E8GI",
+                "id": "0d3fbbf3-ff58-4fac-b3c9-5e5e7f3d0313"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.76759,
+                    32.078056
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "BMWBW",
+                "id": "12ae44e1-d949-4624-ad70-7b532295b2b3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.770222,
+                    32.086575
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "W127U",
+                "id": "b7c56002-c26a-4b39-a546-d9049a3431f8"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.770184,
+                    32.086544
+                ]
+            },
+            "properties": {
+                "battery_level": 93,
+                "code": "H91GD",
+                "id": "17384211-c318-4860-835a-feb774c77410"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.7673,
+                    32.07962
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "8KE9R",
+                "id": "d378c67f-b2d0-4885-aff6-a9653d2945a9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.784241,
+                    32.068108
+                ]
+            },
+            "properties": {
+                "battery_level": 69,
+                "code": "NNV6F",
+                "id": "d8bf5473-6672-4742-945f-8369a800facd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77011166666667,
+                    32.086711666666666
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "EAZ9K",
+                "id": "47ef5921-8532-4077-9c2b-a2e9ff5f988d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.792953,
+                    32.073162
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "3B87T",
+                "id": "353a1068-a910-4de0-859f-a1122bd047de"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.794537,
+                    32.075832
+                ]
+            },
+            "properties": {
+                "battery_level": 82,
+                "code": "QX2RI",
+                "id": "f695c604-5735-4901-930d-f2826d7b7912"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.7932812,
+                    32.0730136
+                ]
+            },
+            "properties": {
+                "battery_level": 93,
+                "code": "IIIIP",
+                "id": "e92a53c4-4338-4fb3-b362-78499e949539"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.781807,
+                    32.091904
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "HUDVJ",
+                "id": "60235f64-3c67-436c-a896-e29f856e8c22"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.772762,
+                    32.069332
+                ]
+            },
+            "properties": {
+                "battery_level": 74,
+                "code": "LXPWI",
+                "id": "159ed7f1-4d4b-432d-819a-2b7e520c3ab3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.795074,
+                    32.08366
+                ]
+            },
+            "properties": {
+                "battery_level": 77,
+                "code": "WTIGV",
+                "id": "6d0a30ca-5b7d-4d6b-aea9-0acf2425e1f6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77032833333333,
+                    32.07000333333334
+                ]
+            },
+            "properties": {
+                "battery_level": 78,
+                "code": "PDTLY",
+                "id": "174e2993-2c57-4936-a0dc-928cb7b1b77d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78281,
+                    32.066124
+                ]
+            },
+            "properties": {
+                "battery_level": 85,
+                "code": "N4WKC",
+                "id": "511b8587-60a7-4a2d-88c3-b54e884a428d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.782894,
+                    32.065922
+                ]
+            },
+            "properties": {
+                "battery_level": 86,
+                "code": "Q2C7Z",
+                "id": "9c838b9b-36bb-4f7b-850d-dc8e7d186f42"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.783031,
+                    32.065865
+                ]
+            },
+            "properties": {
+                "battery_level": 86,
+                "code": "1K9QE",
+                "id": "f0dbbc03-305f-4963-bb3a-efe333996383"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.7784,
+                    32.093307
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "PUHWB",
+                "id": "e46169bd-219d-412f-aecb-94bd80e2d44d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77842912072289,
+                    32.09334684215559
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "YNNZL",
+                "id": "baee9435-0a34-419b-9869-b0b0ede162e2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.766323,
+                    32.073353
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "9MXPX",
+                "id": "304d0452-411d-4dfa-8711-24f4ef8bde80"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.766308,
+                    32.073349
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "4ZRRN",
+                "id": "1be8bfdd-e4e1-487c-80c3-125a304165e3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.766212,
+                    32.073315
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "BWN6I",
+                "id": "496f8a8e-3191-415e-9fb5-34e492bb8095"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.797466,
+                    32.083065
+                ]
+            },
+            "properties": {
+                "battery_level": 74,
+                "code": "S5PH2",
+                "id": "0f9951ff-c17e-470a-9f90-aa2df569cd88"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.765453,
+                    32.074097
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "LV244",
+                "id": "b6235e96-6ed0-4a04-bfb5-17c731aa4f3b"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77858666666667,
+                    32.093765
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "397QT",
+                "id": "b6ef6258-49e5-4a1e-b313-3c804b5b0d02"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.765423,
+                    32.074112
+                ]
+            },
+            "properties": {
+                "battery_level": 95,
+                "code": "6C3TU",
+                "id": "53d27553-6875-4807-84a9-28a5f4a026cd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.785004,
+                    32.093578
+                ]
+            },
+            "properties": {
+                "battery_level": 86,
+                "code": "9GAGN",
+                "id": "4207f593-8b3a-4998-88de-e00a64675f85"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78162833333333,
+                    32.09403666666666
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "2BKUQ",
+                "id": "a90fa839-8e22-4a51-a15d-38a699fa1e66"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.7933,
+                    32.068665
+                ]
+            },
+            "properties": {
+                "battery_level": 80,
+                "code": "8EAXK",
+                "id": "fbed68be-2386-4b8e-9414-fd8fcbc2d6a2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.765621,
+                    32.072319
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "GPGW9",
+                "id": "35276d9c-51a4-4569-907f-596d5c26e1d4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.79403666666666,
+                    32.069165
+                ]
+            },
+            "properties": {
+                "battery_level": 85,
+                "code": "58SQS",
+                "id": "46e6b61e-0c47-4a76-83a2-24482c3496a1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.79609000000001,
+                    32.08786333333333
+                ]
+            },
+            "properties": {
+                "battery_level": 79,
+                "code": "8PMFZ",
+                "id": "de77fcf3-3d96-4a64-a93d-8db066e77aec"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.780807,
+                    32.095036
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "XYDIV",
+                "id": "7b6d344b-2459-46a8-aaa8-e0b06a2a53a4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778469,
+                    32.095104
+                ]
+            },
+            "properties": {
+                "battery_level": 81,
+                "code": "7HU5F",
+                "id": "84fb15dd-6b9d-426b-ab5a-a8c4846c3039"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78001833333334,
+                    32.063716666666664
+                ]
+            },
+            "properties": {
+                "battery_level": 76,
+                "code": "YS31X",
+                "id": "859eb7a5-54fd-4b76-bdf2-5b22736c6037"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.795132,
+                    32.06889
+                ]
+            },
+            "properties": {
+                "battery_level": 87,
+                "code": "1XAC3",
+                "id": "308979d4-4c78-4e05-b3be-db8053619135"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.778286,
+                    32.095348
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "EG4WY",
+                "id": "a8e1165c-4cd8-4f4e-917b-9d60c0a73b75"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.789574,
+                    32.093842
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "VCXRR",
+                "id": "afc2eff4-f747-461f-b82e-7c117f083780"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.789532,
+                    32.093864
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "UVG6G",
+                "id": "d4fcaec5-4659-45d3-b80a-68e40d81717e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77827,
+                    32.095375
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "1M87V",
+                "id": "f9e99cd1-6579-4696-95df-c0e3fd73d40c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.79614333333333,
+                    32.06934666666667
+                ]
+            },
+            "properties": {
+                "battery_level": 80,
+                "code": "WY1MP",
+                "id": "271ce2be-c989-4eb1-b484-2d421585c7f4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.764977,
+                    32.070526
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "BRXUV",
+                "id": "89567fea-762a-4626-873d-b84b5f673e45"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.795174,
+                    32.068214
+                ]
+            },
+            "properties": {
+                "battery_level": 92,
+                "code": "C9GY9",
+                "id": "a345cd99-44ff-4d40-b290-1009acf665c3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.76489333333333,
+                    32.07038166666667
+                ]
+            },
+            "properties": {
+                "battery_level": 98,
+                "code": "1XLXH",
+                "id": "1691584e-cc4e-42c4-80c3-7fb2456e6267"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.776089,
+                    32.095871
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "V2UCP",
+                "id": "09b8c016-0c29-40f5-ac6f-fc88c4cf4ee4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.775925,
+                    32.095848
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "7N87N",
+                "id": "43f2d391-26c6-4dcb-a7a4-8eb0fb187e54"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.77589197460075,
+                    32.09588815461108
+                ]
+            },
+            "properties": {
+                "battery_level": 99,
+                "code": "5HMKD",
+                "id": "1d3dae4b-135d-43ee-9386-8d501cb0f15e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.771313,
+                    32.064751
+                ]
+            },
+            "properties": {
+                "battery_level": 74,
+                "code": "FGTN2",
+                "id": "c5299086-e23d-41ae-a373-3c7bf5fd7bf3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.764412,
+                    32.069225
+                ]
+            },
+            "properties": {
+                "battery_level": 89,
+                "code": "N6R8Z",
+                "id": "97d2f82c-227c-492b-92be-7880f9f68992"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.76407166666667,
+                    32.06778333333333
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "Z2QQ6",
+                "id": "637e9dcd-ea86-48eb-887b-c37d5db402c7"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.76406833333333,
+                    32.067775
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "DEX39",
+                "id": "41beec62-ff27-4d9a-97d5-00c58bcdcc3d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.764072,
+                    32.067768
+                ]
+            },
+            "properties": {
+                "battery_level": 96,
+                "code": "QY4II",
+                "id": "85240e9a-dc0a-4158-861d-f4db2db45c95"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.785339,
+                    32.098278
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "GEHH2",
+                "id": "5ee05fb6-2d4f-4c52-be02-145c3f1ec47b"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.76875,
+                    32.061816666666665
+                ]
+            },
+            "properties": {
+                "battery_level": 87,
+                "code": "3TMDY",
+                "id": "f781a71e-e7f0-495a-a610-7c205c292a49"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.765114,
+                    32.060799
+                ]
+            },
+            "properties": {
+                "battery_level": 75,
+                "code": "5J9L5",
+                "id": "f81f50f3-d83c-4975-b87f-5f6c73df28dd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.78923333333333,
+                    32.05687
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "4WYT3",
+                "id": "581bc6ac-c05c-40b7-b7a1-0f8e5d72b4bc"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.770885,
+                    32.056293
+                ]
+            },
+            "properties": {
+                "battery_level": 69,
+                "code": "MQ9KG",
+                "id": "3bd4a1bd-ec46-4928-b1fa-7d0b37205f00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.75926666666667,
+                    32.05926833333333
+                ]
+            },
+            "properties": {
+                "battery_level": 48,
+                "code": "R7L9X",
+                "id": "a48cd95b-47ea-4b72-844d-69a316599064"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.769459,
+                    32.053749
+                ]
+            },
+            "properties": {
+                "battery_level": 83,
+                "code": "H8GR1",
+                "id": "8b99f71d-0e0c-4d7f-8ebc-8e8b67fec007"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.772625,
+                    32.05201666666667
+                ]
+            },
+            "properties": {
+                "battery_level": 78,
+                "code": "P39XP",
+                "id": "d5366498-f1ce-48ad-9083-2aa535384201"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.759356967841676,
+                    32.05326423834158
+                ]
+            },
+            "properties": {
+                "battery_level": 100,
+                "code": "G9RRT",
+                "id": "f105c61f-d691-4bd7-b375-927961726f1f"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.755951,
+                    32.053577
+                ]
+            },
+            "properties": {
+                "battery_level": 81,
+                "code": "MSDEP",
+                "id": "4412d6ed-1171-471b-9fe7-0dacbea58e8a"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.80073166666667,
+                    32.10883
+                ]
+            },
+            "properties": {
+                "battery_level": 73,
+                "code": "WRJ6N",
+                "id": "bd775676-b87a-46fc-a215-ddbd0d0b4832"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.81013166666666,
+                    32.105305
+                ]
+            },
+            "properties": {
+                "battery_level": 71,
+                "code": "ZJEQR",
+                "id": "734118d4-10c2-4968-ab2b-77f64bdc402f"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.810143,
+                    32.105301
+                ]
+            },
+            "properties": {
+                "battery_level": 83,
+                "code": "VAVNQ",
+                "id": "fe406d47-d945-402d-9480-f77119285c0e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.752853,
+                    32.052837
+                ]
+            },
+            "properties": {
+                "battery_level": 79,
+                "code": "WEE2R",
+                "id": "19f80e41-3cec-4ba4-be3e-2ba6e3aeb0dd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.791382,
+                    32.114456
+                ]
+            },
+            "properties": {
+                "battery_level": 68,
+                "code": "PZ51Z",
+                "id": "d36eb611-61f0-4282-85bf-e70be6fba396"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.75085,
+                    32.05346
+                ]
+            },
+            "properties": {
+                "battery_level": 62,
+                "code": "SR62Q",
+                "id": "21b68376-27fd-4ede-bf90-fd4846514ee2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.750839,
+                    32.053459
+                ]
+            },
+            "properties": {
+                "battery_level": 62,
+                "code": "2J3IA",
+                "id": "b6300f6a-2b29-4b56-bf0d-9f5c4173455f"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.811859,
+                    32.048962
+                ]
+            },
+            "properties": {
+                "battery_level": 97,
+                "code": "IE8QN",
+                "id": "805820ee-806b-4ce7-a71a-865b300f036a"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.81176833333333,
+                    32.048675
+                ]
+            },
+            "properties": {
+                "battery_level": 94,
+                "code": "CZIXR",
+                "id": "b7c18608-d2ec-45db-9618-75ef3b8383a6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.811813,
+                    32.048603
+                ]
+            },
+            "properties": {
+                "battery_level": 94,
+                "code": "IUX2B",
+                "id": "dda1a994-bd44-44fe-afa2-76ea8d380da8"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.816406,
+                    32.107857
+                ]
+            },
+            "properties": {
+                "battery_level": 93,
+                "code": "2CG5W",
+                "id": "88c5e0b4-08f8-44e6-ba31-b83340e0bf82"
+            }
+        }
+    ]
+}
