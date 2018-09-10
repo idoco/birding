@@ -20,13 +20,13 @@ const main = async () => {
         let fileContent = await readFile(folder + '/' + files[i]);
         let locations = JSON.parse(fileContent);
         timeline.push(locations);
+
     }
 
     // collect locations for heatmap
-    heatmapTimeline = timeline.map((step) => 
+    const heatmapTimeline = timeline.map((step) => 
             step.birds.map((bird) => [bird.location.latitude, bird.location.longitude])
     )
-
     // console.log(JSON.stringify(heatmapTimeline, null, 4));
 
     // populate bird location over time map
@@ -83,8 +83,7 @@ const main = async () => {
         "features": features
     }
 
-    console.log(JSON.stringify(geoJson, null, 4));
-    // console.log(JSON.stringify(timeline, null, 4));
+    // console.log(JSON.stringify(geoJson, null, 4));
 
 }
 

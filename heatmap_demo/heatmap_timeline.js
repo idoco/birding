@@ -1,5 +1,4 @@
-let birdpoints =
-[
+let birdpoints = [
     [],
     [],
     [],
