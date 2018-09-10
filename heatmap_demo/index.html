@@ -3,8 +3,8 @@
 
 <head>
     <title>Leaflet.heat demo</title>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <script src="https://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
     <style>
         #map {
             width: 800px;
@@ -39,7 +39,7 @@
 
     <p>
         Using <a href="https://github.com/Leaflet/Leaflet.heat">Leaflet.heat</a> to display TLV birds data
-        <!-- <iframe class="ghbtns" src="http://ghbtns.com/github-btn.html?user=Leaflet&amp;repo=Leaflet.heat&amp;type=watch&amp;count=true"
+        <!-- <iframe class="ghbtns" src="https://ghbtns.com/github-btn.html?user=Leaflet&amp;repo=Leaflet.heat&amp;type=watch&amp;count=true"
             allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
     </p>
 
@@ -57,8 +57,8 @@
 
         var map = L.map('map').setView([32.0795, 34.7812], 14);
 
-        var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        var tiles = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
 
         birdpoints = birdpoints.map(x => x.map(y => [y[0], y[1], 2]));
