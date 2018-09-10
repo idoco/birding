@@ -1,0 +1,5 @@
+
+# Usefull commands
+
+## Copy data from s3
+aws s3 cp s3://birds-locations/date ./data --recursive
