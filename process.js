@@ -22,6 +22,13 @@ const main = async () => {
         timeline.push(locations);
     }
 
+    // collect locations for heatmap
+    heatmapTimeline = timeline.map((step) => 
+            step.birds.map((bird) => [bird.location.latitude, bird.location.longitude])
+    )
+
+    // console.log(JSON.stringify(heatmapTimeline, null, 4));
+
     // populate bird location over time map
     timeline.forEach(step => {
 
