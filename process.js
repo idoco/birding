@@ -25,10 +25,6 @@ const main = async () => {
     // populate bird location over time map
     timeline.forEach(step => {
 
-        if (step.date == '1536474115300') {
-            console.log(stepToGeoJson(step.birds));
-        }
-
         step.birds.forEach(bird => {
             const birdCode = bird.code;
             bird.date = step.date;
@@ -80,7 +76,7 @@ const main = async () => {
         "features": features
     }
 
-    // console.log(JSON.stringify(geoJson, null, 4));
+    console.log(JSON.stringify(geoJson, null, 4));
     // console.log(JSON.stringify(timeline, null, 4));
 
 }

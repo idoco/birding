@@ -15,3 +15,5 @@ npm-debug.log*
 
 # data
 data/
+
+.DS_Store
