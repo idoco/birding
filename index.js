@@ -51,33 +51,6 @@ const getBirds = async (device, token, location) => {
     return response.data;
 }
 
-const convertToGeoJson = (birds) => {
-    const points = [];
-
-    birds.forEach(bird => {
-        points.push({
-            type: "Feature",
-            geometry: {
-                type: "Point",
-                coordinates: [
-                    bird.location.longitude,
-                    bird.location.latitude
-                ]
-            },
-            properties: {
-                battery_level: bird.battery_level,
-                code: bird.code,
-                id: bird.id
-            }
-        })
-    });
-
-    return {
-        "type": "FeatureCollection",
-        "features": points
-    };
-}
-
 const writeToS3 = async (folder, filename, data) => {
     var s3 = new AWS.S3();
     var params = {
@@ -104,11 +77,9 @@ exports.handler = async (event) => {
 
     writeToS3(dateString, data.date, data)
 
-    const geoJson = convertToGeoJson(data.birds);
-
     const response = {
         statusCode: 200,
-        body: JSON.stringify(geoJson, null, 4)
+        body: "Storing birds locations for " + data.date
     };
 
     return response;

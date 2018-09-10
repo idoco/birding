@@ -7,7 +7,7 @@ const readFile = util.promisify(fs.readFile);
 const folder = './data';
 
 const main = async () => {
-    
+
     timeline = [];
     birdsOverTime = {}
 
@@ -15,7 +15,7 @@ const main = async () => {
     files.sort();
 
     // read all step files into the locations timeline
-    for (i=0; i<files.length; i++) {
+    for (i = 0; i < files.length; i++) {
         if (files[i] == '.DS_Store') continue;
         let fileContent = await readFile(folder + '/' + files[i]);
         let locations = JSON.parse(fileContent);
@@ -23,32 +23,37 @@ const main = async () => {
     }
 
     // populate bird location over time map
-    timeline.forEach( step => {
-        step.birds.forEach( bird => {
+    timeline.forEach(step => {
+
+        if (step.date == '1536474115300') {
+            console.log(stepToGeoJson(step.birds));
+        }
+
+        step.birds.forEach(bird => {
             const birdCode = bird.code;
             bird.date = step.date;
 
             if (!birdsOverTime[birdCode]) {
                 birdsOverTime[birdCode] = [bird];
             } else {
-                
+
                 let birdTimeline = birdsOverTime[birdCode];
                 let lastBirdLocation = birdTimeline[birdTimeline.length - 1].location;
                 let traveledDistance = approxDistanceInMeters(lastBirdLocation, bird.location);
-                
+
                 if (traveledDistance > 10) {
                     birdsOverTime[birdCode].push(bird);
                 }
             }
 
-        });    
+        });
     });
 
     features = [];
     Object.keys(birdsOverTime).forEach(function (key) {
         const birdTimeline = birdsOverTime[key];
         const coordinates = birdTimeline.map(bird => [bird.location.longitude, bird.location.latitude, 0]);
-        const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+        const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
         if (coordinates.length == 0 || coordinates.length == 1) return;
 
@@ -71,19 +76,46 @@ const main = async () => {
     });
 
     const geoJson = {
-            "type": "FeatureCollection",
-            "features": features
+        "type": "FeatureCollection",
+        "features": features
     }
-    
-    console.log(JSON.stringify(geoJson, null, 4));
+
+    // console.log(JSON.stringify(geoJson, null, 4));
     // console.log(JSON.stringify(timeline, null, 4));
 
 }
 
-const approxDistanceInMeters = (p1,p2) => {
-    return Math.sqrt( 
-        Math.pow((p1.latitude - p2.latitude), 2) + 
-        Math.pow((p1.longitude - p2.longitude), 2) 
+const stepToGeoJson = (birds) => {
+    const points = [];
+
+    birds.forEach(bird => {
+        points.push({
+            type: "Feature",
+            geometry: {
+                type: "Point",
+                coordinates: [
+                    bird.location.longitude,
+                    bird.location.latitude
+                ]
+            },
+            properties: {
+                battery_level: bird.battery_level,
+                code: bird.code,
+                id: bird.id
+            }
+        })
+    });
+
+    return {
+        "type": "FeatureCollection",
+        "features": points
+    };
+}
+
+const approxDistanceInMeters = (p1, p2) => {
+    return Math.sqrt(
+        Math.pow((p1.latitude - p2.latitude), 2) +
+        Math.pow((p1.longitude - p2.longitude), 2)
     ) * 10000;
 
 }
