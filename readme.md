@@ -7,4 +7,4 @@ Full timeline GeoJson - [link](examples/timeline_example.geojson)
 
 ### Usefull commands
 
-Copy data from `s3 aws s3 cp s3://birds-locations/${date} ./data/${date} --recursivez`
+Copy data from s3 `aws s3 cp s3://birds-locations/${date} ./data/${date} --recursive`
