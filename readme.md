@@ -1,6 +1,9 @@
 
-One day of TLV Birds location heatmap
-https://idoco.github.io/birding/heatmap_demo/
+One day of TLV Birds location heatmap - [demo](https://idoco.github.io/birding/heatmap_demo/)
+[![heatmap demo](examples/heatmap_example.png)](https://idoco.github.io/birding/heatmap_demo/)
+
+Full timeline GeoJson
+[![timeline geojson](examples/timeline_example.png)](examples/timeline_example.geojson)
 
 ### Usefull commands
 
