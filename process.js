@@ -4,9 +4,11 @@ const util = require('util');
 const readdir = util.promisify(fs.readdir);
 const readFile = util.promisify(fs.readFile);
 
+const targetFolder =  process.argv[2] || './data';
+
 const main = async () => {
 
-    const timeline = await createTimeline('./data');
+    const timeline = await createTimeline(targetFolder);
 
     const timestamps = timeline.map((step) => step.date);
 
