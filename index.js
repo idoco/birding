@@ -65,6 +65,8 @@ const writeToS3 = async (folder, filename, data) => {
     });
 }
 
+// lambda function to collect the current birds locations and store them in s3.
+// To change target city replace getBirds target location and dateString timezone
 exports.handler = async (event) => {
 
     const email = randomstring.generate(10) + '@test.com'
@@ -73,7 +75,7 @@ exports.handler = async (event) => {
     const data = await getBirds(device, token, tlvLatLng);
 
     data.date = Date.now();
-    const dateString = new Date().toLocaleString("en-GB", { timeZone: "Asia/Jerusalem" }).split(',')[0].replace(/\//g, '_')
+    const dateString = new Date().toLocaleString("en-GB", { timeZone: tlvTimeZone }).split(',')[0].replace(/\//g, '_')
 
     writeToS3(dateString, data.date, data)
 

@@ -20,8 +20,11 @@ const main = async () => {
         let fileContent = await readFile(folder + '/' + files[i]);
         let locations = JSON.parse(fileContent);
         timeline.push(locations);
-
     }
+
+    // collect step timestamps (Used for heatmap clock)
+    const dates = timeline.map((step) => step.date);
+    // console.log(JSON.stringify(dates, null, 4));
 
     // collect locations for heatmap
     const heatmapTimeline = timeline.map((step) => 
