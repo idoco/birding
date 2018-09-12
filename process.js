@@ -4,37 +4,24 @@ const util = require('util');
 const readdir = util.promisify(fs.readdir);
 const readFile = util.promisify(fs.readFile);
 
-const folder = './data';
-
 const main = async () => {
 
-    timeline = [];
+    const timeline = await createTimeline('./data');
+
+    const timestamps = timeline.map((step) => step.date);
+
+    const locations = timeline.map(step => 
+        step.birds.map((bird) => 
+            [bird.location.latitude, bird.location.longitude])
+    )
+
+    const heatmapTimeline = {timestamps, locations};
+    console.log("const heatmapTimeline = " + JSON.stringify(heatmapTimeline, null, 4));
+
+    // Transform timeline into birdCode to locations map (birdsOverTime)
     birdsOverTime = {}
 
-    let files = await readdir(folder);
-    files.sort();
-
-    // read all step files into the locations timeline
-    for (i = 0; i < files.length; i++) {
-        if (files[i] == '.DS_Store') continue;
-        let fileContent = await readFile(folder + '/' + files[i]);
-        let locations = JSON.parse(fileContent);
-        timeline.push(locations);
-    }
-
-    // collect step timestamps (Used for heatmap clock)
-    const dates = timeline.map((step) => step.date);
-    // console.log(JSON.stringify(dates, null, 4));
-
-    // collect locations for heatmap
-    const heatmapTimeline = timeline.map((step) => 
-            step.birds.map((bird) => [bird.location.latitude, bird.location.longitude])
-    )
-    // console.log(JSON.stringify(heatmapTimeline, null, 4));
-
-    // populate bird location over time map
     timeline.forEach(step => {
-
         step.birds.forEach(bird => {
             const birdCode = bird.code;
             bird.date = step.date;
@@ -85,31 +72,39 @@ const main = async () => {
         "type": "FeatureCollection",
         "features": features
     }
-
-    // console.log(JSON.stringify(geoJson, null, 4));
-
 }
 
-const stepToGeoJson = (birds) => {
-    const points = [];
+// read data folder and create full timeline
+const createTimeline = async (dataFolder) => {
 
-    birds.forEach(bird => {
-        points.push({
-            type: "Feature",
-            geometry: {
-                type: "Point",
-                coordinates: [
-                    bird.location.longitude,
-                    bird.location.latitude
-                ]
-            },
-            properties: {
-                battery_level: bird.battery_level,
-                code: bird.code,
-                id: bird.id
-            }
-        })
-    });
+    let dataFiles = (await readdir(dataFolder)).sort().filter(filename => !filename.startsWith('.'));
+
+    const timeline = await Promise.all(dataFiles.map(async fileName => {
+        let fileContent = await readFile(dataFolder + '/' + fileName);
+        return JSON.parse(fileContent);
+    }));
+
+    return timeline;
+}
+
+// single step to geojson of it's birds locations
+const singleStepToGeoJson = (birds) => {
+
+    const points = birds.map(bird => ({
+        type: "Feature",
+        geometry: {
+            type: "Point",
+            coordinates: [
+                bird.location.longitude,
+                bird.location.latitude
+            ]
+        },
+        properties: {
+            battery_level: bird.battery_level,
+            code: bird.code,
+            id: bird.id
+        }
+    }));
 
     return {
         "type": "FeatureCollection",
@@ -117,6 +112,7 @@ const stepToGeoJson = (birds) => {
     };
 }
 
+// Bad two points distance approximation, assuming the world is flat (It is not!)
 const approxDistanceInMeters = (p1, p2) => {
     return Math.sqrt(
         Math.pow((p1.latitude - p2.latitude), 2) +

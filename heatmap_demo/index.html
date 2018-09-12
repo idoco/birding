@@ -50,18 +50,17 @@
     <div id="map"></div>
 
     <script src="./leaflet-heat.js"></script>
-    <script src="./heatmap_timeline.js"></script>
-    <script src="./dates.js"></script>
+    <script src="./heatmap_data.js"></script>
 
     <script>
 
         var map = L.map('map').setView([32.0795, 34.7812], 14);
-
         var tiles = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
 
-        birdpoints = birdpoints.map(x => x.map(y => [y[0], y[1], 2]));
+        birdpoints = heatmapTimeline.locations.map(x => x.map(y => [y[0], y[1], 2]));
+        dates = heatmapTimeline.timestamps;
 
         var heat = L.heatLayer(birdpoints[0], { radius: 30 }).addTo(map);
         var clock = document.getElementById("clock");
@@ -81,7 +80,7 @@
         function getTimefromMillis(timestamp) {
             let date = new Date(timestamp);
             let minutes = date.getMinutes();
-            minutes = minutes > 9 ? minutes : '0'+minutes;
+            minutes = minutes > 9 ? minutes : '0' + minutes;
             return date.getHours() + ':' + minutes; 
         }
 

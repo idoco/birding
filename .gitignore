@@ -7,9 +7,6 @@ dist/
 # environment variables:
 .env
 
-# jetbrains folder:
-.idea/
-
 # npm log:
 npm-debug.log*
 
@@ -17,3 +14,5 @@ npm-debug.log*
 data/
 
 .DS_Store
+.idea/
+.vscode/
