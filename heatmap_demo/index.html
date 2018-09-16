@@ -39,8 +39,8 @@
 
     <p>
         Using <a href="https://github.com/Leaflet/Leaflet.heat">Leaflet.heat</a> to display TLV birds data
-        <!-- <iframe class="ghbtns" src="https://ghbtns.com/github-btn.html?user=Leaflet&amp;repo=Leaflet.heat&amp;type=watch&amp;count=true"
-            allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
+         <iframe class="ghbtns" src="https://ghbtns.com/github-btn.html?user=idoco&amp;repo=birding&amp;type=watch&amp;count=true"
+            allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
     </p>
 
     <div id="title_container">
@@ -63,7 +63,7 @@
         birdpoints = heatmapTimeline.locations.map(x => x.map(y => [y[0], y[1], 3]));
         dates = heatmapTimeline.timestamps;
 
-        var heat = L.heatLayer(birdpoints[0], { radius: 25 }).addTo(map);
+        var heat = L.heatLayer(birdpoints[0], { radius: 30 }).addTo(map);
         var clock = document.getElementById("clock");
         var calendar = document.getElementById("calendar");
         calendar.innerHTML = new Date(dates[0]).toLocaleDateString();
