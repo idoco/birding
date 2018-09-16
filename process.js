@@ -4,7 +4,7 @@ const util = require('util');
 const readdir = util.promisify(fs.readdir);
 const readFile = util.promisify(fs.readFile);
 
-const targetFolder =  process.argv[2] || './data/tlv_9_12_2018';
+const targetFolder =  process.argv[2] || './data';
 
 const main = async () => {
 
