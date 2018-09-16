@@ -8,4 +8,5 @@ Full timeline GeoJson - [link](examples/timeline_example.geojson)
 ### Usefull commands
 
 Copy data from s3 - `aws s3 cp s3://birds-locations/${date} ./data/${date} --recursive`
+
 Generate heatmap data - `node process.js ./data/${date} > heatmap_demo/heatmap_data.js`
