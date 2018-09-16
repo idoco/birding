@@ -15,6 +15,28 @@ const sfLatLng = { latitude: 37.762053, longitude: -122.449028 }
 const tlvTimeZone = "Asia/Jerusalem";
 const sfTimeZone = "America/Los_Angeles";
 
+// lambda function to collect the current birds locations and store them in s3.
+// To change target city replace getBirds target location and dateString timezone
+exports.handler = async (event) => {
+
+    const email = randomstring.generate(10) + '@test.com'
+    const device = uuid();
+    const token = await login(email, device);
+    const data = await getBirds(device, token, tlvLatLng);
+
+    data.date = Date.now();
+    const dateString = new Date().toLocaleString("en-GB", { timeZone: tlvTimeZone }).split(',')[0].replace(/\//g, '_')
+
+    writeToS3(dateString, data.date, data)
+
+    const response = {
+        statusCode: 200,
+        body: "Storing birds locations for " + data.date
+    };
+
+    return response;
+};
+
 const login = async (email, device) => {
     const response = await axios({
         method: 'post',
@@ -64,25 +86,3 @@ const writeToS3 = async (folder, filename, data) => {
         else console.log(data);           // successful response
     });
 }
-
-// lambda function to collect the current birds locations and store them in s3.
-// To change target city replace getBirds target location and dateString timezone
-exports.handler = async (event) => {
-
-    const email = randomstring.generate(10) + '@test.com'
-    const device = uuid();
-    const token = await login(email, device);
-    const data = await getBirds(device, token, tlvLatLng);
-
-    data.date = Date.now();
-    const dateString = new Date().toLocaleString("en-GB", { timeZone: tlvTimeZone }).split(',')[0].replace(/\//g, '_')
-
-    writeToS3(dateString, data.date, data)
-
-    const response = {
-        statusCode: 200,
-        body: "Storing birds locations for " + data.date
-    };
-
-    return response;
-};
