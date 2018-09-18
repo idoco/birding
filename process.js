@@ -1,10 +1,13 @@
 const fs = require('fs');
 const util = require('util');
 
+const moment = require("moment");
+const momentDurationFormatSetup = require("moment-duration-format");
+
 const readdir = util.promisify(fs.readdir);
 const readFile = util.promisify(fs.readFile);
 
-const targetFolder =  process.argv[2] || './data';
+const targetFolder =  process.argv[2] || './data/tlv_9_12_2018';
 
 const main = async () => {
 
@@ -18,31 +21,50 @@ const main = async () => {
     )
 
     const heatmapTimeline = {timestamps, locations};
-    console.log("const heatmapTimeline = " + JSON.stringify(heatmapTimeline, null, 4));
+    // console.log("const heatmapTimeline = " + JSON.stringify(heatmapTimeline, null, 4));
 
-    // Transform timeline into birdCode to locations map (birdsOverTime)
-    birdsOverTime = {}
+    let birdsOverTime = {} // a map between bird code and its locations during the day
+    let rides = []; // list of all bird rides
 
     timeline.forEach(step => {
         step.birds.forEach(bird => {
             const birdCode = bird.code;
             bird.date = step.date;
 
+            // if (birdCode != "3MV6F") return; // uncomment to run for only one bird
+
             if (!birdsOverTime[birdCode]) {
                 birdsOverTime[birdCode] = [bird];
             } else {
 
-                let birdTimeline = birdsOverTime[birdCode];
-                let lastBirdLocation = birdTimeline[birdTimeline.length - 1].location;
-                let traveledDistance = approxDistanceInMeters(lastBirdLocation, bird.location);
+                const birdTimeline = birdsOverTime[birdCode];
+                const lastBirdStep = birdTimeline[birdTimeline.length - 1];
+                const lastBirdLocation = lastBirdStep.location;
+                const traveledDistance = approxDistanceInMeters(lastBirdLocation, bird.location);
+                const duration = bird.date - lastBirdStep.date;
 
-                if (traveledDistance > 10) {
-                    birdsOverTime[birdCode].push(bird);
+                birdsOverTime[birdCode].push(bird);
+                if (traveledDistance > 25) {
+                    rides.push({
+                        birdCode: birdCode,
+                        startTime: lastBirdStep.date,
+                        startLocation: lastBirdLocation,
+                        endTime: bird.date,
+                        endLocation: bird.location,
+                        duration: duration,
+                        formatedDuration: moment.duration(duration, "milliseconds").format("mm:ss:SS"),
+                        shekels: 5 + (0.5 * Math.ceil(duration/60000)),
+                        usd: 1 + (0.2 * Math.ceil(duration/60000))
+                    });                
                 }
             }
-
         });
     });
+
+    rides = rides.sort((a,b) => a.duration - b.duration);    
+    console.log(JSON.stringify(rides, null, 4))
+    // console.log(rides.reduce( (total, ride) => total + ride.shekels , 0));
+    // console.log(JSON.stringify(birdsOverTime, null, 4))
 
     features = [];
     Object.keys(birdsOverTime).forEach(function (key) {
