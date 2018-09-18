@@ -24,19 +24,17 @@ const main = async () => {
     // console.log("const heatmapTimeline = " + JSON.stringify(heatmapTimeline, null, 4));
 
     let birdsOverTime = {} // a map between bird code and its locations during the day
-    let rides = []; // list of all bird rides
+    let rides = []; // list of all bird rides (That are longer than x meters)
 
     timeline.forEach(step => {
         step.birds.forEach(bird => {
             const birdCode = bird.code;
             bird.date = step.date;
 
-            // if (birdCode != "3MV6F") return; // uncomment to run for only one bird
-
             if (!birdsOverTime[birdCode]) {
                 birdsOverTime[birdCode] = [bird];
-            } else {
 
+            } else {
                 const birdTimeline = birdsOverTime[birdCode];
                 const lastBirdStep = birdTimeline[birdTimeline.length - 1];
                 const lastBirdLocation = lastBirdStep.location;
@@ -44,6 +42,7 @@ const main = async () => {
                 const duration = bird.date - lastBirdStep.date;
 
                 birdsOverTime[birdCode].push(bird);
+                
                 if (traveledDistance > 25) {
                     rides.push({
                         birdCode: birdCode,

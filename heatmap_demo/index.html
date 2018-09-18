@@ -39,7 +39,7 @@
 
     <p>
         Using <a href="https://github.com/Leaflet/Leaflet.heat">Leaflet.heat</a> to display TLV birds data
-         <iframe class="ghbtns" src="https://ghbtns.com/github-btn.html?user=idoco&amp;repo=birding&amp;type=watch&amp;count=true"
+        <iframe class="ghbtns" src="https://ghbtns.com/github-btn.html?user=idoco&amp;repo=birding&amp;type=watch&amp;count=true"
             allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
     </p>
 
@@ -56,8 +56,13 @@
     <script>
 
         var map = L.map('map').setView([32.0795, 34.7812], 14);
-        var tiles = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
+        // var tiles = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            // attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
+        // }).addTo(map);
+
+        var tiles = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiaWRvY28iLCJhIjoiY2ptM2JnbW5lMGN6czN2bW14NXUzMGZ2YyJ9.xIvjUlL3cPhak8p0ucOnxg'
         }).addTo(map);
 
         birdpoints = heatmapTimeline.locations.map(x => x.map(y => [y[0], y[1], 3]));
@@ -75,7 +80,7 @@
 
             if (i == birdpoints.length - 1) {
                 i = 0;
-            } else{
+            } else {
                 i++
             }
 
