@@ -1,28 +1,14 @@
-const fs = require('fs');
-const util = require('util');
-
 const moment = require("moment");
 const momentDurationFormatSetup = require("moment-duration-format");
 const geodist = require('geodist');
 
-const readdir = util.promisify(fs.readdir);
-const readFile = util.promisify(fs.readFile);
+const createTimeline = require('./timeline');
 
 const targetFolder = process.argv[2] || './data/tlv_9_12_2018';
 
 const main = async () => {
 
     const timeline = await createTimeline(targetFolder);
-
-    const timestamps = timeline.map((step) => step.date);
-
-    const locations = timeline.map(step =>
-        step.birds.map((bird) =>
-            [bird.location.latitude, bird.location.longitude, bird.battery_level / 100])
-    )
-
-    const heatmapTimeline = { timestamps, locations };
-    // console.log("const heatmapTimeline = " + JSON.stringify(heatmapTimeline, null, 4));
 
     let birdsOverTime = {} // a map between bird code and its locations during the day
     let rides = []; // list of all bird rides (That are longer than x meters)
@@ -44,7 +30,7 @@ const main = async () => {
 
                 birdsOverTime[birdCode].push(bird);
 
-                if (distance > 100 && duration > (1 * 60 * 1000) && batteryUsed != 0) {
+                if (distance > 100 && duration > (2 * 60 * 1000) && batteryUsed != 0) {
                     rides.push({
                         birdCode, distance, duration, batteryUsed,
                         startTime: new Date(lastBirdStep.date),
@@ -96,19 +82,6 @@ const main = async () => {
         "type": "FeatureCollection",
         "features": features
     }
-}
-
-// read data folder and create full timeline
-const createTimeline = async (dataFolder) => {
-
-    let dataFiles = (await readdir(dataFolder)).sort().filter(filename => !filename.startsWith('.'));
-
-    const timeline = await Promise.all(dataFiles.map(async fileName => {
-        let fileContent = await readFile(dataFolder + '/' + fileName);
-        return JSON.parse(fileContent);
-    }));
-
-    return timeline;
 }
 
 // single step to geojson of it's birds locations
