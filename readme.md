@@ -1,9 +1,9 @@
 ### Collection of scripts used to collect and analyze data about [bird](https://bird.co) scooter locations across Tel Aviv
 
-- [x] Lambda functions to sample bird locations using bird.co internal API
-- [x] Heatmap visualization of bird locations during a a given day
-- [ ] Analyze bird revenues per day
-- [ ] Predict the chances of finding a bird at a given hour and location
+- [x] Lambda function for sampling bird locations using the bird.co internal API
+- [x] Heatmap visualization of bird locations during a given day
+- [ ] Analyze bird usage and revenues per day
+- [ ] Predict the chances of finding a bird at a given time and location
 
 One day of TLV Birds location heatmap - [demo](https://idoco.github.io/birding/heatmap_demo/)
 [![heatmap demo](examples/heatmap_example.png)](https://idoco.github.io/birding/heatmap_demo/)
