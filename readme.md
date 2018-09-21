@@ -23,4 +23,8 @@ Full timeline GeoJson - [link](examples/timeline_example.geojson)
 
 Copy data from s3 - `aws s3 cp s3://birds-locations/${date} ./data/${date} --recursive`
 
-Generate heatmap data - `node process.js ./data/${date} > heatmap_demo/heatmap_data.js`
+Generate heatmap data - `node heatmap.js ./data/${date} > heatmap_demo/heatmap_data.js`
+
+Analyze bird daily usage - `node ride-stats.js ./data/${date}`
+
+Generate GeoJSON of bird movment - `node geojson.js ./data/${date}/ ${birdCode} > test.geojson`
