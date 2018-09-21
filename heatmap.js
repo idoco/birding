@@ -1,4 +1,4 @@
-const createTimeline = require('./timeline');
+const createTimeline = require('./timeline').createTimeline;
 
 const targetFolder = process.argv[2] || './data/tlv_9_12_2018';
 

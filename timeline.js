@@ -17,4 +17,25 @@ const createTimeline = async (dataFolder) => {
     return timeline;
 }
 
-module.exports = createTimeline;
+// returns a map between bird code and its locations during the day
+const collectBirdLocations = (timeline) => {
+    let birdsLocations = {}
+
+    timeline.forEach(step => {
+        step.birds.forEach(birdStep => {
+            birdStep.date = step.date;
+            if (!birdsLocations[birdStep.code]) {
+                birdsLocations[birdStep.code] = [birdStep];
+            } else {
+                birdsLocations[birdStep.code].push(birdStep);
+            }
+        })
+    });
+
+    return birdsLocations;
+}
+
+module.exports = {
+    createTimeline,
+    collectBirdLocations
+};

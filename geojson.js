@@ -1,11 +1,28 @@
 
+const createTimeline = require('./timeline').createTimeline;
+const collectBirdLocations = require('./timeline').collectBirdLocations;
+
+const targetFolder = process.argv[2] || './data/tlv_9_12_2018';
+const targetBirdCode = process.argv[3];
+
+const main = async () => {
+
+    const timeline = await createTimeline(targetFolder);
+    const birdLocations = collectBirdLocations(timeline);
+    console.log(JSON.stringify( timelineGeoJson(birdLocations), null, 4 ))
+
+}
+
 // birdsOverTime to geojson showing all birds rides during the day (timeline)
-const timeLineGeoJson = (birdsOverTime) => {
+const timelineGeoJson = (birdsLocations) => {
     
     features = [];
-    Object.keys(birdsOverTime).forEach(function (key) {
-        const birdTimeline = birdsOverTime[key];
-        const coordinates = birdTimeline.map(bird => [bird.location.longitude, bird.location.latitude, 0]);
+    Object.keys(birdsLocations).forEach( birdCode => {
+
+        if (targetBirdCode && targetBirdCode != birdCode) return;
+
+        const currentBirdLocations = birdsLocations[birdCode];
+        const coordinates = currentBirdLocations.map(bird => [bird.location.longitude, bird.location.latitude, 0]);
         const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
         if (coordinates.length == 0 || coordinates.length == 1) return;
@@ -20,7 +37,7 @@ const timeLineGeoJson = (birdsOverTime) => {
                 "stroke": randomColor,
                 "stroke-width": 3,
                 "stroke-opacity": 1,
-                "name": key,
+                "name": birdCode,
                 "hops": coordinates.length,
                 "styleUrl": "#line-DB4436-5",
                 "styleHash": "3f0b0940"
@@ -58,3 +75,5 @@ const singleStepToGeoJson = (birds) => {
         "features": points
     };
 }
+
+main();
