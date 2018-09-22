@@ -73,7 +73,7 @@
         var calendar = document.getElementById("calendar");
         calendar.innerHTML = new Date(dates[0]).toLocaleDateString();
 
-        let i = 40;
+        let i = 0;
         setInterval(() => {
             heat.setLatLngs(birdpoints[i]);
             clock.innerHTML = new Date(dates[i]).toLocaleTimeString();
@@ -84,7 +84,7 @@
                 i++
             }
 
-        }, 200)
+        }, 40000 / birdpoints.length)
 
     </script>
 </body>

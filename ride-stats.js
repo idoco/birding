@@ -19,6 +19,7 @@ const main = async () => {
     const numberOfRides = rides.length;
     const totals = getTotals(rides);
     const averages = getAverages(numberOfRides, totals);
+    console.log('Stats for', targetFolder);
     console.log('number of rides', rides.length);
     console.log('revenue in NIS', totals.shekels);
     console.log('averages', JSON.stringify(averages, null, 4));
