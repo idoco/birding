@@ -14,14 +14,19 @@ const main = async () => {
     const rides = collectBirdRides(birdLocations);
 
     const sortedRides = rides.sort((a, b) => a.duration - b.duration);
-    // console.log(JSON.stringify(sortedRides, null, 4))
+    const middle = Math.floor(sortedRides.length/2)
+    const medianDuration = moment.duration(sortedRides[middle].duration, "milliseconds").format("hh:mm:ss")
     
+    // console.log(JSON.stringify(sortedRides, null, 4))
+
     const numberOfRides = rides.length;
     const totals = getTotals(rides);
     const averages = getAverages(numberOfRides, totals);
     console.log('Stats for', targetFolder);
+    console.log('number of birds spotted', Object.keys(birdLocations).length);
     console.log('number of rides', rides.length);
     console.log('revenue in NIS', totals.shekels);
+    console.log('median ride duration', medianDuration);
     console.log('averages', JSON.stringify(averages, null, 4));
 
 }
@@ -40,13 +45,15 @@ const collectBirdRides = (birdsLocations) => {
             const distance = distanceInMeters(lastBirdStep.location, birdStep.location);
             const batteryUsed = lastBirdStep.battery_level - birdStep.battery_level;
             const duration = birdStep.date - lastBirdStep.date;
+            const batteryUsedPerHour = batteryUsed / (duration / 60 / 60 / 1000);
 
-            if (distance > 100 && duration > (2 * 60 * 1000) && batteryUsed > 0) {
+            // If the new bird location qualifies as a ride add it to the list
+            if (distance > 100 && duration > (2 * 60 * 1000) && batteryUsed > 0 && batteryUsedPerHour > 1) {
                 rides.push({
                     birdCode, distance, duration, batteryUsed,
-                    formatedDuration: moment.duration(duration, "milliseconds").format("mm:ss:SS"),
-                    startTime: new Date(lastBirdStep.date),
-                    endTime: new Date(birdStep.date),
+                    formatedDuration: moment.duration(duration, "milliseconds").format("hh:mm:ss"),
+                    startTime: new Date(lastBirdStep.date).toString(),
+                    endTime: new Date(birdStep.date).toString(),
                     startLocation: lastBirdStep.location,
                     endLocation: birdStep.location,
                     battery_level: birdStep.battery_level,
@@ -69,7 +76,7 @@ const getTotals = (rides) => rides.reduce((a, b) => ({
 
 const getAverages = (numberOfRides, totals) => ({
     distance: Number((totals.distance / numberOfRides).toFixed(2)),
-    duration: Number((totals.duration / numberOfRides).toFixed(2)),
+    duration: moment.duration(totals.duration / numberOfRides, "milliseconds").format("hh:mm:ss"),
     batteryUsed: Number((totals.batteryUsed / numberOfRides).toFixed(2)),
     shekels: Number((totals.shekels / numberOfRides).toFixed(2)),
     powerUsedPerKm: Number((1000 / (totals.distance / totals.batteryUsed)).toFixed(2)) 

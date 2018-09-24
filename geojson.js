@@ -9,7 +9,7 @@ const main = async () => {
 
     const timeline = await createTimeline(targetFolder);
     const birdLocations = collectBirdLocations(timeline);
-    console.log(JSON.stringify( timelineGeoJson(birdLocations), null, 4 ))
+    console.log(JSON.stringify( timelineGeoJson(birdLocations), null, 4 ));
 
 }
 
