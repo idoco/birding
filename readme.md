@@ -27,4 +27,6 @@ Generate heatmap data - `node heatmap.js ./data/${date} > heatmap_demo/heatmap_d
 
 Analyze bird daily usage - `node ride-stats.js ./data/${date}`
 
+Daily usage report as CSV - `node ride-stats.js ./data/ csv`
+
 Generate GeoJSON of bird movment - `node geojson.js ./data/${date}/ ${birdCode} > test.geojson`

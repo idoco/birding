@@ -11,7 +11,7 @@ const collectBirdLocations = require('./timeline').collectBirdLocations;
 const collectBirdRides = require('./timeline').collectBirdRides;
 
 const targetFolder = process.argv[2] || './data/tlv_14_2018';
-const statsType = process.argv[3] || 'text'; // can be csv
+const statsType = process.argv[3] || 'text'; // text, json, csv or histogram
 
 const main = async () => {
 
@@ -19,15 +19,23 @@ const main = async () => {
 
         case 'text':
             const rideStats = await collectRidesStats(targetFolder);
-            // console.log(JSON.stringify(rideStats.rides, null, 4));    
             printStats(rideStats);
+            break;
+
+        case 'json':
+            const rides = (await collectRidesStats(targetFolder)).rides;
+            console.log(JSON.stringify(rides, null, 4));    
             break;
 
         case 'csv':
             // targetFolder expects '/' sufix
-            let dataFolders = (await readdir(targetFolder)).sort().filter(filename => !filename.startsWith('.'));
-            dataFolders = dataFolders.map(folderName => targetFolder + folderName)
-            const multipleRideStats = await Promise.all(dataFolders.map(collectRidesStats));
+            const dataFolders = (await readdir(targetFolder)).sort().filter(filename => !filename.startsWith('.'));
+
+            const multipleRideStats = [];
+            for (const folder of dataFolders) {
+                const rideStats = await collectRidesStats(targetFolder + folder)
+                multipleRideStats.push(rideStats);
+            }
             printCsv(multipleRideStats);
             break;
 
