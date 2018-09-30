@@ -40,7 +40,6 @@ const main = async () => {
             break;
 
         case 'histogram':
-            // expects specifc day folder
             const histogram = await getHistogram(targetFolder);
             console.log(histogram);
             break;
@@ -62,7 +61,9 @@ const collectRidesStats = async (folder) => {
     const totals = getTotals(rides);
     const averages = getAverages(numberOfRides, totals);
 
-    return { folder, birdLocations, rides, medianDuration, totals, averages };
+    const tag = folder.split('/').pop();
+
+    return { tag, birdLocations, rides, medianDuration, totals, averages };
 }
 
 const getTotals = (rides) => rides.reduce((a, b) => ({
@@ -97,21 +98,26 @@ const printCsv = (rideStats) => {
     })
 }
 
-const toCsvLine = ({ folder, birdLocations, rides, medianDuration, totals, averages }) => [
-    folder, Object.keys(birdLocations).length, rides.length, totals.shekels, medianDuration,
+const toCsvLine = ({ tag, birdLocations, rides, medianDuration, totals, averages }) => [
+    tag, Object.keys(birdLocations).length, rides.length, totals.shekels, medianDuration,
     ...Object.values(averages)
 ].join(", ");
 
-const getHistogram = async (folder) => {
-    const timeline = await createTimeline(folder);
-    const birdLocations = collectBirdLocations(timeline);
-    const rides = collectBirdRides(birdLocations);
-
+const getHistogram = async (targetFolder) => {
     const histogram = {};
-    rides.forEach(ride => {
-        const rideHour = ride.startTime.getHours();
-        histogram[rideHour] = histogram[rideHour] ? histogram[rideHour] + 1 : 1;
-    });
+    const dataFolders = (await readdir(targetFolder)).sort().filter(filename => !filename.startsWith('.'));
+
+    for (const folder of dataFolders) {
+        const timeline = await createTimeline(targetFolder + folder);
+        const birdLocations = collectBirdLocations(timeline);
+        const rides = collectBirdRides(birdLocations);
+    
+        rides.forEach(ride => {
+            const rideHour = ride.startTime.getHours();
+            histogram[rideHour] = histogram[rideHour] ? histogram[rideHour] + 1 : 1;
+        });
+    }
+
     return histogram;
 }
 

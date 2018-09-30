@@ -10,8 +10,9 @@ dist/
 # npm log:
 npm-debug.log*
 
-# data
+# Project
 data/
+.results/
 
 .DS_Store
 .idea/
