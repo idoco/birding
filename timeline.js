@@ -8,6 +8,8 @@ const moment = require("moment");
 const momentDurationFormatSetup = require("moment-duration-format");
 const geodist = require('geodist');
 
+const timezone = "Asia/Jerusalem";
+
 // read data folder and create full timeline
 const createTimeline = async (dataFolder) => {
 
@@ -60,8 +62,8 @@ const collectBirdRides = (birdsLocations) => {
                 rides.push({
                     birdCode, distance, duration, batteryUsed,
                     formatedDuration: moment.duration(duration, "milliseconds").format("hh:mm:ss"),
-                    startTime: new Date(lastBirdStep.date),
-                    endTime: new Date(birdStep.date),
+                    startTime: new Date(lastBirdStep.date).toLocaleString("en-US", {timeZone: timezone}),
+                    endTime: new Date(birdStep.date).toLocaleString("en-US", {timeZone: timezone}),
                     startLocation: lastBirdStep.location,
                     endLocation: birdStep.location,
                     battery_level: birdStep.battery_level,
