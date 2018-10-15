@@ -44,6 +44,10 @@ const main = async () => {
             console.log(histogram);
             break;
 
+        case 'sightings':
+            await printSightingsCsv(targetFolder);
+            break;
+
     }
 
 }
@@ -119,6 +123,26 @@ const getHistogram = async (targetFolder) => {
     }
 
     return histogram;
+}
+
+const printSightingsCsv = async (targetFolder) => {
+    const birdCodes = new Set();
+    const dataFolders = (await readdir(targetFolder)).sort().filter(filename => !filename.startsWith('.'));
+
+    console.log("date, daily_birds_seen, total_unique_brids_seen, used_birds_ratio");
+
+    for (const folder of dataFolders) {
+        const timeline = await createTimeline(targetFolder + folder);
+        const birdLocations = collectBirdLocations(timeline);
+    
+        Object.keys(birdLocations).forEach(code => {
+            birdCodes.add(code);
+        });
+
+        const dailyBirds = Object.keys(birdLocations).length;
+        console.log([folder, dailyBirds, birdCodes.size, Number(dailyBirds / birdCodes.size).toFixed(2)].join(', '));
+    }
+    return Array.from(birdCodes);
 }
 
 main();
