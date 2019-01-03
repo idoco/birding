@@ -1,7 +1,8 @@
 ### Tracking and analyzing [bird](https://bird.co) scooter locations across Tel Aviv
 
 - [x] Heatmap visualization of bird locations during a given day.
-- [ ] Analyze bird usage durations and patterns.
+- [x] Analyze bird usage durations and patterns.
+- [ ] Add a date picker to the heatmap demo.
 - [ ] Predict the chances of finding a bird at a given time and location.
 
 One day of TLV Birds location heatmap - [demo](https://idoco.github.io/birding/heatmap_demo/)
