@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leaflet.heat demo</title>
+    <link rel="stylesheet" href="./leaflet.css" />
+    <script src="./leaflet.js"></script>
+    <style>
+        #map {
+            width: 800px;
+            height: 600px;
+        }
+
+        #title_container {
+            z-index: 10000;
+            position: fixed;
+            left: 80px;
+        }
+
+        body {
+            font: 16px/1.4 "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .ghbtns {
+            position: relative;
+            top: 4px;
+            margin-left: 5px;
+        }
+
+        a {
+            color: #0077ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- This be very hacky -->
+
+    <p>
+        Using <a href="https://github.com/Leaflet/Leaflet.heat">Leaflet.heat</a> to display TLV birds data
+        <iframe class="ghbtns" src="https://ghbtns.com/github-btn.html?user=idoco&amp;repo=birding&amp;type=watch&amp;count=true"
+            allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+    </p>
+
+    <div id="title_container">
+        <h3 id="calendar"></h3>
+        <h3 id="clock"></h3>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="./leaflet-heat.js"></script>
+    <script src="./heatmap_data.js"></script>
+
+    <script>
+
+        var map = L.map('map').setView([32.062, 34.772], 14);
+        // var tiles = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        // attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
+        // }).addTo(map);
+
+        L.geoJson(geojsonFeature).addTo(map);
+
+        var tiles = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiaWRvY28iLCJhIjoiY2ptM2JnbW5lMGN6czN2bW14NXUzMGZ2YyJ9.xIvjUlL3cPhak8p0ucOnxg'
+        }).addTo(map);
+
+        birdpoints = heatmapTimeline.locations.map(x => x.map(y => [y[0], y[1], 3]));
+        dates = heatmapTimeline.timestamps;
+
+        var heat = L.heatLayer(birdpoints[0], { radius: 30 }).addTo(map);
+        var clock = document.getElementById("clock");
+        var calendar = document.getElementById("calendar");
+        calendar.innerHTML = new Date(dates[0]).toLocaleDateString();
+
+        let i = 0;
+        setInterval(() => {
+            heat.setLatLngs(birdpoints[i]);
+            clock.innerHTML = new Date(dates[i]).toLocaleTimeString("en-US", { timeZone: "Asia/Jerusalem" });
+            calendar.innerHTML = new Date(dates[i]).toLocaleDateString();
+
+            if (i == birdpoints.length - 1) {
+                i = 0;
+            } else {
+                i++
+            }
+
+        }, 40000 / birdpoints.length)
+
+    </script>
+</body>
+
+</html>
