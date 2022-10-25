@@ -59,9 +59,10 @@
         // var tiles = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         // attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
         // }).addTo(map);
-
-        var tiles = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            id: 'mapbox.streets',
+        
+        var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+            id: 'mapbox/streets-v11',
             accessToken: 'pk.eyJ1IjoiaWRvY28iLCJhIjoiY2ptM2JnbW5lMGN6czN2bW14NXUzMGZ2YyJ9.xIvjUlL3cPhak8p0ucOnxg'
         }).addTo(map);
 
