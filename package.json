@@ -9,7 +9,7 @@
   "author": "idoco",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.311.0",
+    "aws-sdk": "^2.1354.0",
     "axios": "^0.18.0",
     "geodist": "^0.2.1",
     "moment": "^2.22.2",
